@@ -123,4 +123,73 @@ The application also keeps related information synchronised when underlying data
 **Tools:** Java, Java Date API
 
 **Key Areas:** Encapsulation, Composition, Object Relationships, LocalDate, Data Synchronisation, OOP
+---
+
+# Python & Data Projects
+
+## [International Sales & Business Performance Analysis](https://colab.research.google.com/drive/1JEo_wYX0JLjrXxHQMzrl09BoALasjPvT?usp=sharing)
+
+Working with three related datasets containing order, product, and country information, this project uses Python to clean, transform, combine, and structure data before carrying out a broader business performance analysis.
+
+The final dataset covers **1,330 orders across 45 countries and 6.57M units sold**, with approximately **$1.70B in total revenue and $501.4M in profit**. Performance was compared across products, geographic markets, regions, and online/offline sales channels to identify differences between sales volume, revenue, costs, and profitability.
+
+The project also examines shipping and order-processing times, sales dynamics across different time periods, and relationships between operational factors and financial performance. This required extensive use of data preparation, aggregation, grouping, filtering, and multi-dimensional comparisons in Python.
+
+**Key Metrics:** $1.70B Revenue • $501.4M Profit • 6.57M Units Sold • 1,330 Orders • 45 Countries
+
+**Tools:** Python, Pandas, NumPy, Matplotlib, Seaborn, Google Colab
+
+**Key Areas:** Data Cleaning, Data Transformation, Data Aggregation, Multi-table Analysis, Business Metrics, Data Visualisation
+
+---
+
+## [Sales & Traffic Analysis](https://colab.research.google.com/drive/1hOoHGm3nnuUyAwyKzxi3VSY3nRgIL4F8?usp=sharing)
+
+This end-to-end project examines e-commerce performance across **61,087 website sessions generating approximately $5.77M in revenue**, combining information about sessions, orders, products, users, locations, devices, and acquisition channels.
+
+Data from multiple sources was prepared and processed before being analysed in Python using Pandas and NumPy. The workflow included missing-value analysis, aggregations, pivot tables, data transformations, and comparisons across countries, product categories, devices, traffic channels, and customer groups.
+
+Statistical methods were also applied to evaluate correlations and differences between selected metrics and segments rather than relying only on visual patterns. Daily revenue reached nearly **$500K at its peak**, while the broader analysis was used to identify major revenue drivers and differences in customer and traffic behaviour.
+
+The final results were supported by Python visualisations and presented through an interactive Tableau dashboard.
+
+**Key Metrics:** 61,087 Sessions • $5.77M Revenue • Nearly $500K Peak Daily Revenue
+
+**Tools:** SQL, Google BigQuery, Python, Pandas, NumPy, Matplotlib, Seaborn, Tableau
+
+**Key Areas:** Data Processing, EDA, Statistical Analysis, Aggregations, Pivot Tables, Data Visualisation
+
+---
+
+# SQL Projects
+
+## [Email & Account Activity Analysis](https://github.com/jhgjvvjk/Email-Account-Activity-Analysis/blob/main/main)
+
+A multi-stage SQL analysis combining account activity and email communication metrics across different countries and dates. The workflow tracks unique accounts together with email activity such as messages sent, opened, and visited, producing a combined view of account behaviour and communication engagement.
+
+Account information is analysed by date, country, sending interval, verification status, and subscription status, while email data is processed separately before both areas are merged into a unified analytical dataset.
+
+The query uses multiple **CTEs, joins, aggregations, `UNION ALL`, and window functions** to calculate detailed and country-level metrics. Country totals are then ranked using `DENSE_RANK`, allowing the analysis to identify the **top 10 countries by account volume and email activity**.
+
+**Tools:** SQL, Google BigQuery
+
+**Key Techniques:** CTEs, Joins, Aggregations, UNION ALL, Window Functions, DENSE_RANK
+
+**Key Output:** Top 10 Countries by Account & Email Activity
+
+---
+
+## [Marketing & Revenue Performance Analysis](https://github.com/jhgjvvjk/Marketing-Revenue-Performance-Analysis)
+
+Rather than analysing each business area separately, this project combines revenue, paid advertising costs, email activity, and customer registrations into one consolidated daily SQL report.
+
+Separate stages of the query prepare and aggregate information from multiple sources before bringing the results together through CTEs and joins. Additional calculations produce email engagement indicators such as open rate and click rate alongside financial and acquisition metrics.
+
+The final output provides **6 core performance metrics** within one structured dataset — revenue, advertising cost, emails sent, open rate, click rate, and registrations — making it suitable for further reporting or analysis without repeatedly rebuilding the underlying calculations.
+
+**Key Metrics:** Revenue • Advertising Cost • Emails Sent • Open Rate • Click Rate • Registrations
+
+**Tools:** SQL, Google BigQuery
+
+**Key Areas:** CTEs, Joins, Aggregations, Multi-source Data Processing, KPI Calculation, Structured Reporting
 
